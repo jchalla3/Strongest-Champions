@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var session = require('express-session');
 var passport = require('passport');
 var methodOverride = require('method-override');
+const collection = "hero";
 
 // load the env vars
 require('dotenv').config();
@@ -21,6 +22,9 @@ require('./config/passport');
 // require our routes
 var indexRoutes = require('./routes/index');
 var usersRoutes = require('./routes/users');
+var heroesRoutes = require('./routes/heroes');
+const { db } = require('./models/user');
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -43,9 +47,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 
+
 // mount all routes with appropriate base paths
 app.use('/', indexRoutes);
 app.use('/users', usersRoutes);
+app.use('/heroes/users', heroesRoutes);
 
 // invalid request, send 404 page
 app.use(function(req, res) {

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Strongest Heroes!</title>
+  <title>Strongest Champions!</title>
   <!-- Google Icon Fonts used by Materialize -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Materialize CSS Framework -->
@@ -11,21 +11,55 @@
   <!-- JavaScript for Materialize -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
-
 <body>
   <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
-        <a href="" class="brand-logo left">Strongest heroes!</a>
+        <a href="" class="brand-logo left">Strongest Champions</a>
         <ul class="right">
           <li>
             <% if (user) { %>
-                <a href="/logout"><i class="material-icons left">trending_flat</i>Log Out</a>
+                <a href="/logout"><i class="material-icons right">trending_flat</i>Log Out</a>
             <% } else { %>
-                <a href="/auth/google"><i class="material-icons left">vpn_key</i>Login with Google</a>
+                <a href="/auth/google"><i class="material-icons right">vpn_key</i>Login with Google</a>
             <% } %>
           </li>
         </ul>
       </div>
     </nav>
   </div>
+  <div class="container">
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <form id="form">
+                <div class="form-group">
+                    <label for="hero">Hero</label>
+                    <input type="text" class="form-control" id="heroUserInput" placeholder="Hero">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+                
+            </form>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <ul class="list-group" id="display">
+            
+            </ul>
+        </div>
+        <div class="col-lg-2"></div>
+    </div> 
+    <br>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+            <div class="alert" role="alert" id="message">
+                
+            </div>
+        </div>
+        <div class="col-lg-2"></div>
+    </div>
+  </body>
