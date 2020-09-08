@@ -9,3 +9,5 @@ Node.js
 CSS
 
 ### planned future enhancements: will be to update css entirely to fit a more broad comic book aesthetic. 
+# screenshots: <img width="1280" alt="Screen Shot 2020-09-08 at 3 13 38 PM" src="https://user-images.githubusercontent.com/68159937/92523469-0660ca00-f1e6-11ea-9d65-a108f743a7b6.png">
+
