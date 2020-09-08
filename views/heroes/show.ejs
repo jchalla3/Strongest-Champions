@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 
 <h1 id="show-title"><%= title %></h1>
-<h3>From the universe of<%= %>.</h3>
+<h3><%= %>.</h3>
 <% if(hero.user.toString() == user._id.toString()) { %> 
 <a href="/heroes/<%= hero._id %>/edit" class="details" id="hero-edit-link">Edit Champion Info</a>
 <% } %> 

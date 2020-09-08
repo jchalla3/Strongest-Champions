@@ -7,9 +7,9 @@
 }
 
 body {
-  background: url(https://i.pinimg.com/originals/9a/c0/c4/9ac0c4a7ac1153088ab709e300bb5a26.jpg);
-  background-size: inherit;
-  background-attachment: center;
+  background: url(https://cdn.shopify.com/s/files/1/0152/6487/4560/products/avengers_700_ar0162_c3a5f186-0011-4271-9514-4d55d9ca8592.png?v=1578760391);
+  background-size: contain;
+  background-attachment: fixed;
 }
 
 main {
@@ -20,7 +20,7 @@ main {
 .container {
   display: inline-block;
   padding: 25px;
-  background: url(https://mythbank.com/wp-content/uploads/2019/10/dcmain-banner-1024x384.jpg);
+  background: url(https://cdn.shopify.com/s/files/1/0152/6487/4560/products/avengers_700_ar0162_c3a5f186-0011-4271-9514-4d55d9ca8592.png?v=1578760391);
   background-size: contain;
 }
 
@@ -31,7 +31,6 @@ main {
 li {
   font-size: 30px;
   list-style: inside;
-  background-color: white;
   padding: 8px;
 }
 
