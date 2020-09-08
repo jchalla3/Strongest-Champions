@@ -52,10 +52,12 @@ a:hover {
 
 h1 {
   text-align: left;
+  color: lightblue;
 }
 
 h3 {
   text-align: left;
+  color: lightblue;
 }
 
 #bios-list-header {
