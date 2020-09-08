@@ -44,7 +44,7 @@ function delBio(req, res) {
     Hero.findById(req.params.heroId, function(err, hero) {
         hero.bios.id(req.params.bioId).remove()
         hero.save(function(err) {
-            res.render('heroes/show', { title: `${hero.name}`, city: `${hero.city}`, hero})  
+            res.render('heroes/show', { title: `${hero.name}`, universe: `${hero.universe}`, hero})  
         })
     })
 };

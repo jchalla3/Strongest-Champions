@@ -24,7 +24,7 @@ function newHero(req, res) {
 
 function show(req, res) {
     Hero.findById(req.params.id, function(err, hero) {
-        res.render('heroes/show', { title: `${hero.name}`, city: `${hero.city}`, hero });
+        res.render('heroes/show', { title: `${hero.name}`, universe: `${hero.universe}`, hero });
     });
 }  
 

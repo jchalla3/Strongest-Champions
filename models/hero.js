@@ -13,7 +13,7 @@ const bioSchema = new Schema({
 
 const heroSchema = new Schema({
     name: String,
-    city: String,
+    universe: String,
     bios: [bioSchema],
     user: {
         type: Schema.Types.ObjectId,
