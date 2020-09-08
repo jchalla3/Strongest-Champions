@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(130, 130, 130); */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+body {
+  background: url(https://www.quirkybyte.com/wp-content/uploads/2020/04/Cosmic-Thor-Ultra-Instinct-Goku-Superman-Prime-One-Million-1-780x470.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  padding: 35px;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: flex;
+  padding: 30px;
+  background-color: white;
+}
+
+.logout {
+  margin-left: auto;
+}
+
+li {
+  font-size: 30px;
+  list-style: none;
+  background-color: white;
+  padding: 8px;
+}
+
+a {
+  color: blue;
+  background-color: white;
+  text-decoration: none;
+}
+
+.details {
+  background-color: rgba(73, 92, 39, 0);
+  color: rgb(6, 172, 243);
+  font-size: 18px;
+}
+
+a:hover {
+  color: lightskyblue;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#reviews-list-header {
+  font-size: 20px;
+}
+
+textarea {
+  width: 60%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+button {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+button:hover {
+  font-size: 110%;
+  background-color: lightskyblue;
+}
+
+.delete-btn:hover {
+  font-size: 110%;
+  background-color: darkblue;
+}
+
+p {
+  color: white;
+}
+
+.hero-form {
+  width: 30%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+#hero-edit-link {
+  float: right;
+}
+
+#landing-body {
+  background: url(https://www.quirkybyte.com/wp-content/uploads/2020/04/Cosmic-Thor-Ultra-Instinct-Goku-Superman-Prime-One-Million-1-780x470.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#landing-title {
+  color: blue;
+  font-size: 50px;
+}
+
+#landing-subtitle {
+  color: darkblue;
+}
+
+

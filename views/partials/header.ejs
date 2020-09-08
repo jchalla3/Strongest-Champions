@@ -1,65 +1,26 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <title>Strongest Champions!</title>
-  <!-- Google Icon Fonts used by Materialize -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Materialize CSS Framework -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="stylesheets/style.css" />
-  <!-- JavaScript for Materialize -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title>Strongest Champions</title>
 </head>
 <body>
-  <div class="navbar-fixed">
+  <header>
     <nav>
-      <div class="nav-wrapper">
-        <a href="" class="brand-logo left">Strongest Champions</a>
-        <ul class="right">
-          <li>
-            <% if (user) { %>
-                <a href="/logout"><i class="material-icons right">trending_flat</i>Log Out</a>
-            <% } else { %>
-                <a href="/auth/google"><i class="material-icons right">vpn_key</i>Login with Google</a>
-            <% } %>
+      <ul class="container">
           </li>
-        </ul>
-      </div>
+          <li><a href="/heroes">See Champions</a></li>
+          <li>|</li>
+          <li><a href="/heroes/new">Add Champions</a></li>
+          <% if (user) { %>
+          <li class="logout"><a href="/logout"></i>Log Out</a></li>
+          <% } else { %>
+          <li class="logout"><a href="/auth/google">Login with Google</a></li>
+          <% } %>
+      </ul>
     </nav>
-  </div>
-  <div class="container">
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <form id="form">
-                <div class="form-group">
-                    <label for="hero">Hero</label>
-                    <input type="text" class="form-control" id="heroUserInput" placeholder="Hero">
-                    <button type="submit" class="btn btn-primary">Create</button>
-                </div>
-                
-            </form>
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <ul class="list-group" id="display">
-            
-            </ul>
-        </div>
-        <div class="col-lg-2"></div>
-    </div> 
-    <br>
-    <div class="row">
-        <div class="col-lg-2"></div>
-        <div class="col-lg-8">
-            <div class="alert" role="alert" id="message">
-                
-            </div>
-        </div>
-        <div class="col-lg-2"></div>
-    </div>
-  </body>
+  </header>
+<main>

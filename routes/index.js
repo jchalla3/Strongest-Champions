@@ -1,9 +1,10 @@
-var router = require('express').Router();
+var express = require('express');
+var router = express.Router();
 const passport = require('passport');
 
-// The root route renders our only view
-router.get('/', function(req, res) {
-  res.redirect('/users');
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Strongest-Hero' });
 });
 
 // Google OAuth login route
@@ -16,14 +17,14 @@ router.get('/auth/google', passport.authenticate(
 router.get('/oauth2callback', passport.authenticate(
   'google',
   {
-    successRedirect : '/users',
-    failureRedirect : '/users'
+    successRedirect : '/heroes',
+    failureRedirect : '/'
   }
 ));
 
 // OAuth logout route
 router.get('/logout', function(req, res){
-  req.logout();
+  req.logout('/');
   res.redirect('/');
 });
 

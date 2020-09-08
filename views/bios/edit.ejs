@@ -1,0 +1,19 @@
+
+<%- include('../partials/header') %>
+
+<h1><%= hero.name %></h1>
+<h3>Located in the city of <%= hero.city %></h3>
+<br><br>
+<h4>Edit or Remove This Champion:</h4>
+<br>
+<form action="/heroes/<%= hero._id %>/bios/<%= bio._id %>/update?_method=PUT" method="POST">
+    <textarea type="text" name="text" class="new-bio"><%= bio.text %></textarea>
+    <br><br>
+    <button type="submit" class="submit-btn">Submit</button>
+</form>
+<br>
+<form action="/heroes/<%= hero._id %>/bios/<%= bio._id %>/delete?_method=DELETE" method="POST">
+    <button type="submit" class="delete-btn">Delete This Bio</button>
+</form>
+
+<%- include('../partials/footer') %>

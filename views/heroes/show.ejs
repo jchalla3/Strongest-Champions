@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<h1 id="show-title"><%= title %></h1>
+<h3>Located in the city of <%= city %>.</h3>
+<% if(hero.user.toString() == user._id.toString()) { %> 
+<a href="/heroes/<%= hero._id %>/edit" class="details" id="hero-edit-link">Edit Champion Info</a>
+<% } %> 
+<br>
+<h4 id="bios-list-header">Champion Bio:</h4>
+    <br>
+    <% hero.bios.forEach(function(r) { %> 
+    <p><%= r.text %> </p>
+    <% if(r.user.toString() == user._id.toString()) { %> 
+    <a class="details" href="/heroes/<%= hero._id %>/bios/<%= r._id %>">Edit</a>
+    <% } %> 
+    <br><br>
+    <% }); %> 
+    <h4>Write Bio:</h4>
+        <br>
+        <form action="/heroes/<%= hero._id %>/bios " method="POST">
+            <textarea type="text" name="text" class="new-bio"></textarea>
+            <br><br>
+            <button type="submit" class="submit-btn">Add Bio</button>
+        </form>
+
+<%- include('../partials/footer') %>

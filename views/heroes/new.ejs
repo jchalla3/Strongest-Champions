@@ -1,0 +1,17 @@
+<%- include('../partials/header') %>
+
+    <h1>Add Your Champion!</h1>
+    <br><br>
+    <form action="/heroes" method="POST">
+        <h2>Champion Name:</h2>
+        <br>
+        <input type="text" name="name" class="hero-form">
+        <br><br>
+        <h2>City:</h2>
+        <br>
+        <input type="text" name="city" class="hero-form">
+        <br><br>
+        <button type="submit" class="submit-btn">Add Champion</button>
+    </form>
+
+<%- include('../partials/footer') %>

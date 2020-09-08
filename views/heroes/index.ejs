@@ -1,0 +1,12 @@
+<%- include('../partials/header') %>
+
+    <h1 id="index-title">Strongest Champion List!</h1>
+    <br><br>
+        <% heroes.forEach(function(c) { %> 
+        <h2 class="hero-name"><%= c.name %> </h2>
+            <h4 class="city">City: <%= c.city %> </h4>
+                <a class="details" href="/heroes/<%= c._id %> ">Info</a>
+                <br><br><br>
+        <% }); %> 
+   
+<%- include('../partials/footer') %>

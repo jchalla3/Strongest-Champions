@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+    <h1>Edit or Remove This Champion</h1>
+    <h3></h3>
+    <br><br>
+        <form action="/heroes/<%= hero._id %>?_method=PUT" method="POST">
+            <h2>Champion Name:</h2>
+            <br>
+            <input type="text" name="name" class="hero-form" placeholder="<%= hero.name %> ">
+            <br><br>
+            <h2>City:</h2>
+            <br>
+            <input type="text" name="city" class="hero-form" placeholder="<%= hero.city %> ">
+            <br><br>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <br>
+        <form action="/heroes/<%= hero._id %>?_method=DELETE" method="POST">
+            <button type="submit" class="delete-btn">Delete Champion</button>
+        </form>
+
+<%- include('../partials/footer') %>
