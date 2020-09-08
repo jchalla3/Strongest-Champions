@@ -7,20 +7,21 @@
 }
 
 body {
-  background: url(https://www.quirkybyte.com/wp-content/uploads/2020/04/Cosmic-Thor-Ultra-Instinct-Goku-Superman-Prime-One-Million-1-780x470.jpg);
-  background-size: cover;
-  background-attachment: fixed;
+  background: url(https://i.pinimg.com/originals/9a/c0/c4/9ac0c4a7ac1153088ab709e300bb5a26.jpg);
+  background-size: inherit;
+  background-attachment: center;
 }
 
 main {
-  padding: 35px;
-  color: rgb(255, 255, 255);
+  padding: 25px;
+  color: black;
 }
 
 .container {
-  display: flex;
-  padding: 30px;
-  background-color: white;
+  display: inline-block;
+  padding: 25px;
+  background: url(https://mythbank.com/wp-content/uploads/2019/10/dcmain-banner-1024x384.jpg);
+  background-size: contain;
 }
 
 .logout {
@@ -29,7 +30,7 @@ main {
 
 li {
   font-size: 30px;
-  list-style: none;
+  list-style: inside;
   background-color: white;
   padding: 8px;
 }
@@ -51,15 +52,15 @@ a:hover {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
 }
 
 h3 {
-  text-align: center;
+  text-align: left;
 }
 
-#reviews-list-header {
-  font-size: 20px;
+#bios-list-header {
+  font-size: 25px;
 }
 
 textarea {
@@ -106,8 +107,8 @@ p {
 }
 
 #landing-body {
-  background: url(https://www.quirkybyte.com/wp-content/uploads/2020/04/Cosmic-Thor-Ultra-Instinct-Goku-Superman-Prime-One-Million-1-780x470.jpg);
-  background-size: cover;
+  background: url(https://cdn.shopify.com/s/files/1/0152/6487/4560/products/avengers_700_ar0162_c3a5f186-0011-4271-9514-4d55d9ca8592.png?v=1578760391);
+  background-size: contain;
   background-attachment: fixed;
 }
 
@@ -117,7 +118,7 @@ p {
 }
 
 #landing-subtitle {
-  color: darkblue;
+  color: lightblue;
 }
 
 
